@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>CALCULO IMC</title>
+  </head>
+  <body>
+    <div class="container-principal">
+      <!---TEXTOS E INPUT--->
+
+      <div class="principal-calcular-imc">
+        <div class="principal-informacoes">
+          <h1>Calcule seu imc</h1>
+          <p>
+            IMC é o Índice de Massa Corporal, que mede se uma pessoa está com
+            peso saudável para sua altura. É calculado dividindo o peso em
+            quilogramas pelo quadrado da altura em metros. O resultado é
+            comparado com uma tabela de referência para determinar se a pessoa
+            está abaixo do peso, com peso saudável, com sobrepeso ou obesidade.
+            É importante lembrar que o IMC deve ser interpretado com cuidado e
+            nunca utilizado como único critério para diagnóstico de problemas de
+            saúde.
+          </p>
+        </div>
+        <form>
+          <label><strong>ALTURA</strong></label>
+          <input placeholder="ex: 1.80" id="principal-altura" />
+
+          <label><strong>PESO</strong></label>
+          <input id="principal-peso" />
+
+          <button id="calcular">Calcular</button>
+        </form>
+      </div>
+      <!--- DIV BLOCOS IMC --->
+      <div class="bloco-imc">
+        <div id="resultado"> <span id="resultadoSpan"></span></div>
+        <div id="icon"><i class="bi bi-arrow-left"></i></div>
+        <div class="teste1">
+          <div class="imc-normal">NORMAL</div>
+          <div class="imc-sobrepeso">SOBREPESO</div>
+        </div>
+        <div class="teste2">
+          <div class="imc-magro">MAGRO</div>
+          <div class="imc-obeso">OBESO</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
